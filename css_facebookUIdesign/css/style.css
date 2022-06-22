@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Shippori+Antique&display=swap');
+
+
+:root{
+    --primary:#0572e7;
+    --dark:#18191a;
+    --semi-dark:#242526;
+    --soft-dark:#3a3b3c;
+    --warning:#f4b728;
+    --success:#45bd62;
+    --danger:#f3425f;
+    --text-color:#d5d7db;
+}
+*{
+    color: var(--text-color);
+    padding: 0px;
+    margin: 1px;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--dark);
+}
+.nav{
+   background-color:  var(--semi-dark);
+    height: 50px;
+    display: flex;
+    top: 100px;
+    align-items: center;
+}
+.left{
+    width: 25%;
+    display: flex;
+    justify-content: flex-start;
+}
+.left-box{
+    display: flex;
+    padding: 10px;
+}
+.center{
+    width: 50%;
+    margin-left: 10em;
+
+}
+.right{
+  width: 25%;
+}
+.logo-facebook{
+    width: 70px;
+    height: 40px;
+    padding: 3px 5px;
+}
+.search-box{
+    display: flex;
+    height:30px;
+    background-color: var(--soft-dark);
+    border-radius: 2em;
+    margin: 7px -11px;
+    align-items: center ;
+
+
+}
+.search-box .feather-search{
+    border-color: none;
+    color: var(--text-color);
+
+
+}
+.search-input {
+    background-color: var(--soft-dark);
+    border-radius: 6em;
+    border: none;
+    color: var(--text-color);
+
+}
+.center-box{
+    display: flex;
+    text-align: center;
+
+
+}
+.center{
+    margin-left: 63px;
+
+}
+.center-link{
+    display: flex;
+    width: 100px;
+    border-bottom: 5px solid var(--semi-dark);
+    text-align: center;
+    justify-content: center;
+    padding:10px;
+    position: relative;
+}
+.center-link:hover{
+    background-color: var(--soft-dark);
+    border-radius: 15px;
+}
+.center-link.active:hover{
+    background-color: var(--semi-dark);
+    border-radius: 0px;
+
+}
+.center-link.active{
+    border-bottom:  5px solid var(--primary);
+    color:blue;
+}
+.center-icon{
+    font-size: 28px;
+}
+.center-link .noti{
+    background-color: red;
+    border-radius: 2em;
+    padding: 3px 5px;
+    padding-top: 3px;
+    padding-right: 5px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    font-size: 10px;
+    position: absolute;
+    right: 25px;
+}
+.center-link.active .center-icon{
+    color: var(--primary);
+}
+.right{
+}
+.right-box{
+  display: flex;
+    justify-content: flex-end;
+}
+.right-link{
+     background-color: var(--semi-dark);
+}
+.right-link{
+    background-color: var(--soft-dark);
+    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+.right-link.plus-icon{
+   margin: 2em;
+}
+.right-box.profile{
+    width: 10px;
+}
+.profile .profile-img{
+    width: 38px;
+    height: 38px;
+    border-radius: 50px;
+    margin-right: 10px;
+
+}
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-right: 10px;
+
+}
+.profile:hover{
+    background-color: var(--soft-dark);
+
+}
+.profile.profile-text{
+    font-size: bolder;
+}
+.fb-body{
+    display: flex;
+}
+.left-aside{
+    width: 28%;
+}
+.chat{
+    width: 30%;
+}
+.new-feed{
+    overflow: hidden;
+    width: 41%;
+}
+.my-day {
+    border-radius: 10px;
+    padding-top: 10px;
+    position: relative;
+
+}
+.my-day-owner{
+    width: 100px;
+    height: 173px;
+    border-radius: 15px;
+
+}
+.feather-plus-icon{
+    padding-top: 30px;
+}
+.feather-plus{
+    background-color: var(--semi-dark);
+    padding: 10px;
+    border-radius: 26px;
+    margin-left: 19px;
+    padding-top: 10px;
+}
+.my-day-text{
+    position: absolute;
+    bottom: 8px;
+    padding: 8px;
+}
+.add-post {
+    height: 110px;
+    border-radius: 20px;
+    margin-top: 10px;
+
+}
+.post-list {
+    margin-top: 30px;
+    background-color: var(--semi-dark);
+}
+/*.myday-overall{*/
+/*    position: absolute;*/
+/*}*/
+.my-day-list{
+    width: 100px;
+    display: flex;
+    position: relative;
+}
+.my-day-owner-img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: 100%;
+    margin-bottom: -43px;
+    margin-left: 9px;
+    border-color: var(--primary);
+    border-style: solid;
+}
+.scoll-my-day{
+    width: 50px;
+    height: 50px;
+    background-color: var(--semi-dark);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: -437px;
+    top: 66px;
+}
+.add-post-box{
+    background-color: var(--semi-dark);
+    border-radius: 10px;
+    padding: 10px 20px;
+
+}
+.add-text {
+    display: flex;
+    text-align: center;
+}
+.add-text-profile{
+    height: 40px;
+    border-radius: 50%;
+    width: 40px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.add-text .search-input{
+    width: 100%;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+.add-file{
+    display: flex;
+}
+.add-text-box{
+    background-color: var(--soft-dark) ;
+    flex-grow: 1;
+    border-radius: 20px;
+}
+.divider{
+    height: 1px;
+
+    background-color:  var(--soft-dark);
+ }
+.add-file{
+    display: flex;
+}
+.add-file div{
+    flex-grow: 1;
+    text-align: center;
+    padding: 10px;
+    border-radius: 40px;
+}
+.add-file div:hover{
+    background-color: var(--soft-dark);
+}
+.add-file .video i{
+  color: var(--danger);
+    margin-right: 10px;
+}
+.add-file .photo i{
+  color: var(--success);
+    margin-right: 10px;
+}
+.add-file .github i{
+ color: var(--warning);
+    margin-right: 10px;
+}
+.front{
+    display: flex;
+}
+.front-profile{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.public{
+    display: flex;
+}
+.first{
+    display: flex;
+}
+.back{
+    align-items: flex-end;
+    margin-left: 326px;
+    margin-top: 5px;
+}
+.second{
+    margin-top: 10px;
+    width: 100%;
+}
+.third{
+    display: flex;
+}
+.reaction .feather-thumbs-up{
+    color: blue;
+}
+.reaction .feather-heart{
+    color: var(--danger);
+}
+.four{
+    display: flex;
+    justify-content: space-around;
+}
+hr{
+    color: var(--soft-dark);
+}
+.left-profile-box{
+    display: flex;
+    text-align: center;
+}
+.left-profile{
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-left: 10px;
+}
+.p-profile{
+    margin-top: 10px;
+}
